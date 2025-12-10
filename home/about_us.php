@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wild West Reads - About Us</title>
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts (sama seperti HOME) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
@@ -13,23 +13,17 @@
 
     <style>
         body {
-            background-image: url('back_about.png');
-            background-color: #3f090d;
+            background-image: url('../assets/back_about.png');
             background-size: cover;
             background-position: center;
             margin: 0;
-            padding: 0;
-            color: #FFFFFF;
+            padding: 0; 
             font-family: Arial, sans-serif;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            overflow: hidden;
         }
 
-        /* =======================================
-           NAVBAR DIUBAH AGAR SESUAI FILE HOME
-        ======================================= */
         .header {
             background-color: #5d0f17;
             padding: 10px 40px;
@@ -39,8 +33,8 @@
         }
 
         .logo img {
-            width: 50px;
-            height: 50px;
+            width: 55px;
+            height: 55px;
         }
 
         .nav-links {
@@ -53,9 +47,9 @@
         .nav-links a {
             color: #FFFFFF;
             text-decoration: none;
-            margin-left: 30px;
+            margin-left: 35px;
             padding-bottom: 5px;
-            transition: border-bottom 0.3s;
+            transition: 0.3s;
         }
 
         .nav-links a:hover,
@@ -64,16 +58,14 @@
         }
 
         .user-icon {
-            margin-left: 30px;
+            margin-left: 35px;
             cursor: pointer;
         }
 
         .user-icon::before {
             content: '👤';
-            font-size: 26px;
+            font-size: 28px;
         }
-
-        /* ======================================= */
 
         .main-content {
             flex-grow: 1;
@@ -84,41 +76,27 @@
             text-align: center;
         }
 
-        .rope-circle {
+        .cowboy-left,
+        .cowboy-right {
             position: absolute;
-            width: 600px;
-            height: 600px;
-            background-image: url('../assets/rope.png');
+            bottom: 0;
+            width: 28%;
+            height: 100%;
             background-size: contain;
             background-repeat: no-repeat;
-            background-position: center;
-            z-index: 5;
+            z-index: 10;
         }
 
         .cowboy-left {
-            position: absolute;
             left: 0;
-            bottom: 0;
-            width: 30%;
-            height: 100%;
             background-image: url('../assets/cowboy4.png');
-            background-size: contain;
-            background-repeat: no-repeat;
             background-position: left bottom;
-            z-index: 10;
         }
 
         .cowboy-right {
-            position: absolute;
             right: 0;
-            bottom: 0;
-            width: 30%;
-            height: 100%;
             background-image: url('../assets/cowboy3.png');
-            background-size: contain;
-            background-repeat: no-repeat;
             background-position: right bottom;
-            z-index: 10;
         }
 
         .about-content {
@@ -130,7 +108,7 @@
 
         .about-content h2 {
             font-size: 5vw;
-            color: #C0C0C0; 
+            color: #C0C0C0;
             margin-bottom: 30px;
             text-shadow:
                 -1px -1px 0 #000,
@@ -141,7 +119,6 @@
 
         .about-content p {
             font-size: 1.8vw;
-            color: #FFFFFF;
             line-height: 1.6;
             text-shadow: 1px 1px 2px #000;
         }
@@ -165,7 +142,7 @@
             font-size: 20px;
             border: 1px solid #FFFFFF;
             border-radius: 5px;
-            transition: background-color 0.3s;
+            transition: 0.3s;
         }
 
         .footer-nav a:hover {
@@ -173,7 +150,6 @@
         }
     </style>
 </head>
-
 <body>
 
     <header class="header">
@@ -192,7 +168,6 @@
 
     <div class="main-content">
         <div class="cowboy-left"></div>
-        <div class="rope-circle"></div>
 
         <div class="about-content">
             <h2>About Us</h2>
@@ -205,8 +180,8 @@
         <div class="cowboy-right"></div>
 
         <div class="footer-nav">
-            <a href="#">&lt; Back</a>
-            <a href="#">Next &gt;</a>
+            <a href="home.php">&lt; Back</a>
+            <a href="product.php">Next &gt;</a>
         </div>
     </div>
 

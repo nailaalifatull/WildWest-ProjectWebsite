@@ -32,7 +32,6 @@
             flex-direction: column;
         }
 
-        /* 🔥 Overlay untuk menggelapkan background (opacity 0.2) */
         body::after {
             content: "";
             position: fixed;
@@ -40,7 +39,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.75); /* ubah opacity di sini */
+            background: rgba(85, 32, 32, 0.75); /* ubah opacity di sini */
             z-index: -1;
         }
 
