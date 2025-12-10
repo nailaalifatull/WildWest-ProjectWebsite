@@ -60,7 +60,7 @@
             align-self: flex-start;
         }
         .wild-west-logo img {
-            width: 70px;
+            width: 80px;
             margin-bottom: 5px;
         }
 
@@ -89,14 +89,14 @@
             color: var(--color-light-text);
             font-size: 20px;
             outline: none;
-            font-family: 'Metal Mania', cursive; /* FONT METAL MANIA */
+            font-family: 'Metal Mania', cursive;
             letter-spacing: 1px;
         }
 
         .input-group input::placeholder {
             color: var(--color-light-text);
             opacity: 0.7;
-            font-family: 'Metal Mania', cursive; /* FONT METAL MANIA */
+            font-family: 'Metal Mania', cursive;
         }
 
         /* SOCIAL LOGIN */
@@ -140,9 +140,10 @@
             font-size: 22px;
             cursor: pointer;
             width: 60%;
-            align-self: center;
+            margin: 0 auto; /* FIX POSITION */
+            display: block; /* FIX CENTERING */
             text-align: center;
-            font-family: 'Metal Mania', cursive; /* FONT METAL MANIA */
+            font-family: 'Metal Mania', cursive;
         }
 
         .login-prompt {
@@ -156,7 +157,7 @@
             text-decoration: none;
         }
 
-        /* BACK BUTTON */
+        /* BACK BUTTON — FIX SO IT DOES NOT PULL BUTTON LEFT */
         .back-btn {
             background: rgba(255,255,255,0.1);
             color: var(--color-light-text);
@@ -167,8 +168,9 @@
             font-family: 'Metal Mania', cursive;
             position: absolute;
             bottom: 40px;
-            left: 70px;
+            left: 30px; /* Dikecilkan agar tidak mengganggu layout */
             text-decoration: none;
+            z-index: 1; /* Supaya tidak nabrak elemen lain */
         }
 
         .back-btn:hover {
@@ -237,10 +239,10 @@
         </form>
 
         <p class="login-prompt">
-            Already have an account? <a href="login.html" class="login-link">Log in</a>
+            Already have an account? <a href="login.php" class="login-link">Log in</a>
         </p>
 
-        <a href="index.html" class="back-btn">
+        <a href="awal.php" class="back-btn">
             <i class="fas fa-chevron-left"></i> Back
         </a>
 
@@ -252,4 +254,3 @@
 </div>
 </body>
 </html>
-

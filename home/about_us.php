@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wild West Reads - About Us</title>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
 
     <style>
         body {
@@ -25,30 +27,27 @@
             overflow: hidden;
         }
 
+        /* =======================================
+           NAVBAR DIUBAH AGAR SESUAI FILE HOME
+        ======================================= */
         .header {
             background-color: #5d0f17;
             padding: 10px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-family: 'Metal Mania', cursive;
-            font-size: 20px;
-            z-index: 50;
         }
 
-        .logo {
-            display: flex;
-            gap: 5px;
-        }
         .logo img {
-            width: 30px;
-            height: 30px;
-            object-fit: contain;
+            width: 50px;
+            height: 50px;
         }
 
         .nav-links {
             display: flex;
             align-items: center;
+            font-family: "Jacquard 12", cursive;
+            font-size: 35px;
         }
 
         .nav-links a {
@@ -59,7 +58,8 @@
             transition: border-bottom 0.3s;
         }
 
-        .nav-links a:hover, .nav-links a.active {
+        .nav-links a:hover,
+        .nav-links a.active {
             border-bottom: 2px solid #FFFFFF;
         }
 
@@ -67,12 +67,13 @@
             margin-left: 30px;
             cursor: pointer;
         }
-        
-        .user-icon img {
-            width: 30px;
-            height: 30px;
-            vertical-align: middle;
+
+        .user-icon::before {
+            content: '👤';
+            font-size: 26px;
         }
+
+        /* ======================================= */
 
         .main-content {
             flex-grow: 1;
@@ -177,18 +178,15 @@
 
     <header class="header">
         <div class="logo">
-            <img src="../assets/logo.png" alt="Logo">
-            <img src="../assets/logo.png" alt="Logo">
+            <img src="../assets/logo.png" alt="Wild West Logo">
+            <img src="../assets/logo.png" alt="Wild West Logo">
         </div>
 
         <nav class="nav-links">
-        <a href="home.php" class="active">Home</a>
-        <a href="about_us.php">About Us</a>
-        <a href="product.php">Product</a>
-
-        <a href="login.html" class="user-icon icon-user"></a>
-        </nav>
-    </header>
+            <a href="home.php">Home</a>
+            <a href="about_us.php" class="active">About Us</a>
+            <a href="product.php">Product</a>
+            <a href="login.html" class="user-icon"></a>
         </nav>
     </header>
 
