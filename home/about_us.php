@@ -5,27 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wild West Reads - About Us</title>
 
-    <!-- Google Fonts (sama seperti HOME) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
 
     <style>
         body {
-            background-image: url('../assets/back_about.png');
-            background-size: cover;
+            overflow: hidden;   
+            background-image: url('../assets/back_about1.jpg');
+            background-size: 100%;
+            background-repeat: no-repeat;
             background-position: center;
             margin: 0;
             padding: 0; 
-            font-family: Arial, sans-serif;
             min-height: 100vh;
             display: flex;
-            flex-direction: column;
+            flex-direction: column; 
         }
 
         .header {
-            background-color: #5d0f17;
+            background-color: #5d0f17AA;
             padding: 10px 40px;
             display: flex;
             justify-content: space-between;
@@ -33,8 +34,8 @@
         }
 
         .logo img {
-            width: 55px;
-            height: 55px;
+            width: 50px;
+            height: 50px;
         }
 
         .nav-links {
@@ -76,51 +77,52 @@
             text-align: center;
         }
 
-        .cowboy-left,
-        .cowboy-right {
+        .cowboy-left {
+            left: -100px;
+            background-image: url('../assets/cowboy4.png');
+            background-position: left bottom;
             position: absolute;
             bottom: 0;
-            width: 28%;
+            width: 33%;
             height: 100%;
             background-size: contain;
             background-repeat: no-repeat;
-            z-index: 10;
-        }
-
-        .cowboy-left {
-            left: 0;
-            background-image: url('../assets/cowboy4.png');
-            background-position: left bottom;
+            z-index: 1;
         }
 
         .cowboy-right {
-            right: 0;
+            right: -50px;
             background-image: url('../assets/cowboy3.png');
             background-position: right bottom;
+            position: absolute;
+            bottom: 0;
+            width: 35%;
+            height: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            z-index: 1;
         }
 
         .about-content {
             z-index: 15;
             max-width: 500px;
             padding: 20px;
-            font-family: 'Metal Mania', cursive;
+            font-family: 'Abhaya Libre', cursive;
         }
 
         .about-content h2 {
-            font-size: 5vw;
-            color: #C0C0C0;
-            margin-bottom: 30px;
-            text-shadow:
-                -1px -1px 0 #000,
-                 1px -1px 0 #000,
-                -1px  1px 0 #000,
-                 1px  1px 0 #000;
+            font-size: 4.5vw;
+            font-family: 'Rye', cursive;
+            color: #E1D9CC;
+            margin-bottom: 25px;
+            text-shadow: 1px 1px 2px #100e0aff;
         }
 
         .about-content p {
             font-size: 1.8vw;
             line-height: 1.6;
-            text-shadow: 1px 1px 2px #000;
+            color : #eeccb7ff;
+            text-shadow: 1px 1px 2px #f19d20ff;
         }
 
         .footer-nav {
@@ -138,7 +140,7 @@
             background-color: #4a2818;
             color: #FFFFFF;
             text-decoration: none;
-            font-family: 'Metal Mania', cursive;
+            font-family: 'Rye', cursive;
             font-size: 20px;
             border: 1px solid #FFFFFF;
             border-radius: 5px;
@@ -162,13 +164,12 @@
             <a href="home.php">Home</a>
             <a href="about_us.php" class="active">About Us</a>
             <a href="product.php">Product</a>
-            <a href="login.html" class="user-icon"></a>
+            <a href="profile.php" class="user-icon"></a>
         </nav>
     </header>
 
     <div class="main-content">
-        <div class="cowboy-left"></div>
-
+        
         <div class="about-content">
             <h2>About Us</h2>
             <p>
@@ -176,13 +177,14 @@
                 We aim to deliver quality content, attractive design, and a smooth user experience.
             </p>
         </div>
-
-        <div class="cowboy-right"></div>
-
+        
+        
         <div class="footer-nav">
             <a href="home.php">&lt; Back</a>
             <a href="product.php">Next &gt;</a>
         </div>
+        <div class="cowboy-right"></div>
+        <div class="cowboy-left"></div>
     </div>
 
 </body>

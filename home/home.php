@@ -51,7 +51,7 @@
 
         /* HEADER */
         .header {
-            background-color: #5d0f17;
+            background-color: #5d0f17cc;
             padding: 10px 40px;
             display: flex;
             justify-content: space-between;
@@ -202,7 +202,7 @@
             <a href="home.php" class="nav-home">Home</a>
             <a href="about_us.php" class="nav-about">About Us</a>
             <a href="product.php" class="nav-product">Product</a>
-            <a href="login.html" class="user-icon"></a>
+            <a href="profile.php" class="user-icon"></a>
         </nav>
     </header>
 
@@ -235,3 +235,4 @@
 
 </body>
 </html>
+

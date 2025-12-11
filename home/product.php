@@ -15,7 +15,7 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-image: url('images/backgroundmu.jpg');
+            background-image: url('../assets/back_product.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -24,7 +24,7 @@
            NAVBAR SAMA PERSIS SEPERTI HOME
            ========================== */
         .header {
-            background-color: #5d0f17;
+            background-color: #5d0f17cc;
             padding: 10px 40px;
             display: flex;
             justify-content: space-between;
@@ -68,8 +68,8 @@
 
         /* TITLE */
         .title {
-            font-family: "Rye", cursive;
-            font-size: 65px;
+            font-family: "Jacquard 12", cursive;
+            font-size: 95px;
             text-align: center;
             margin-top: 40px;
             margin-bottom: 20px;
@@ -79,8 +79,9 @@
 
         /* BACK BUTTON */
         .back-btn {
-            display: inline-block;
-            margin: 20px 0 30px 40px;
+            position: fixed;      /* bikin nempel ke layar */
+            bottom: 20px;         /* jarak dari bawah */
+            left: 20px;           /* jarak dari kiri */
             background-color: #4a2818;
             color: #fff;
             padding: 10px 25px;
@@ -88,11 +89,12 @@
             font-size: 22px;
             font-family: "Rye", cursive;
             text-decoration: none;
-            border: 2px solid #F5E3C8;
+            border: 2px solid  #F5E3C8;
+            z-index: 1000;        /* supaya ga ketutup elemen lain */  
         }
 
         .back-btn:hover {
-            background-color: #6a3a24;
+            background-color: #4a2818 ;
         }
 
         /* GRID */
@@ -159,17 +161,14 @@
             <a href="home.php">Home</a>
             <a href="about_us.php">About Us</a>
             <a href="product.php" class="active">Product</a>
-            <a href="login.html" class="user-icon"></a>
+            <a href="profile.php" class="user-icon"></a>
         </nav>
     </header>
 
-    <!-- PAGE TITLE -->
     <div class="title">Books</div>
 
-    <!-- BACK BUTTON -->
     <a href="product.php" class="back-btn">‹ Back</a>
 
-    <!-- GRID -->
     <div class="container">
         <div class="grid">
 
@@ -198,6 +197,34 @@
                 <img src="images/book4.jpg">
                 <div class="rating">★★★★☆</div>
                 <div class="title-book">Judul Buku 4</div>
+                <div class="arrow">→</div>
+            </div>
+
+            <div class="card">
+                <img src="images/book1.jpg">
+                <div class="rating">★★★★★</div>
+                <div class="title-book">Judul Buku 5</div>
+                <div class="arrow">→</div>
+            </div>
+
+            <div class="card">
+                <img src="images/book2.jpg">
+                <div class="rating">★★★★☆</div>
+                <div class="title-book">Judul Buku 6</div>
+                <div class="arrow">→</div>
+            </div>
+
+            <div class="card">
+                <img src="images/book3.jpg">
+                <div class="rating">★★★★☆</div>
+                <div class="title-book">Judul Buku 7</div>
+                <div class="arrow">→</div>
+            </div>
+
+            <div class="card">
+                <img src="images/book4.jpg">
+                <div class="rating">★★★★☆</div>
+                <div class="title-book">Judul Buku 8</div>
                 <div class="arrow">→</div>
             </div>
 
