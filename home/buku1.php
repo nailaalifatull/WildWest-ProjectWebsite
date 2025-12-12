@@ -6,44 +6,65 @@
     <title>Detail Buku - Wild West Reads</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+    
     <style>
         body {
+            overflow: hidden;   
+            background-image: url('../assets/back_books.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
             margin: 0;
-            padding: 0;
-            font-family: 'Crimson Text', serif;
-            background: url('your-background.jpg') no-repeat center/cover;
-            color: #fff;
+            padding: 0; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column; 
         }
 
-        /* NAVBAR */
-        .navbar {
-            width: 100%;
-            background: rgba(60, 0, 0, 0.92);
+        .header {
+            background-color: #5d0f17AA;
+            padding: 10px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 12px 40px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
         }
 
         .nav-links {
             display: flex;
-            gap: 40px;
+            align-items: center;
+            font-family: "Jacquard 12", cursive;
+            font-size: 35px;
         }
 
         .nav-links a {
+            color: #FFFFFF;
             text-decoration: none;
-            font-size: 22px;
-            color: #fff;
-            font-family: 'Playfair Display', serif;
+            margin-left: 35px;
+            padding-bottom: 5px;
+            transition: 0.3s;
         }
 
-        .nav-links a:hover {
-            text-decoration: underline;
+        .nav-links a:hover,
+        .nav-links a.active {
+            border-bottom: 2px solid #FFFFFF;
+        }
+
+        .user-icon {
+            margin-left: 35px;
+            cursor: pointer;
+        }
+
+        .user-icon::before {
+            content: '👤';
+            font-size: 28px;
         }
 
         /* CONTENT */
@@ -117,18 +138,22 @@
 </head>
 <body>
 
-    <div class="navbar">
-        <div class="nav-logo"></div>
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Product</a>
-            <a href="#">About Us</a>
+    <header class="header">
+        <div class="logo">
+            <img src="../assets/logo.png" alt="Wild West Logo">
         </div>
-    </div>
+
+        <nav class="nav-links">
+            <a href="home.php" class="nav-home">Home</a>
+            <a href="about_us.php" class="nav-about">About Us</a>
+            <a href="product.php" class="nav-product">Product</a>
+            <a href="profile.php" class="user-icon"></a>
+        </nav>
+    </header>
 
     <div class="container">
         <div class="book-img">
-            <img src="jonah-hex.jpg" alt="Book Cover">
+            <img src="../assets/buku1.png" alt="Book Cover">
         </div>
 
         <div class="info-box">

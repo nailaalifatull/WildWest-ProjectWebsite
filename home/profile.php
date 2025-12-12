@@ -216,7 +216,7 @@
     </div>
 
     <!-- BACK BUTTON -->
-    <a href="profile.php" class="back-btn">‹ Back</a>
+    <a href="../index.php" class="back-btn">‹ Back</a>
 
 </body>
 </html>

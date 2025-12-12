@@ -173,58 +173,58 @@
         <div class="grid">
 
             <div class="card">
-                <img src="images/book1.jpg">
+                <img src="../assets/buku1.png">
                 <div class="rating">★★★★★</div>
-                <div class="title-book">Judul Buku 1</div>
+                <div class="title-book">Jonah Hex: Two-Gun Mojo</div>
                 <div class="arrow">→</div>
             </div>
 
             <div class="card">
-                <img src="images/book2.jpg">
+                <img src="../assets/buku2.png">
                 <div class="rating">★★★★☆</div>
-                <div class="title-book">Judul Buku 2</div>
+                <div class="title-book">The Sixth Gun Omnibus Vol. 1</div>
                 <div class="arrow">→</div>
             </div>
 
             <div class="card">
-                <img src="images/book3.jpg">
+                <img src="../assets/buku3.png">
                 <div class="rating">★★★★☆</div>
-                <div class="title-book">Judul Buku 3</div>
+                <div class="title-book">All-Star Western, Volume 1: Guns and Gotham</div>
                 <div class="arrow">→</div>
             </div>
 
             <div class="card">
-                <img src="images/book4.jpg">
+                <img src="../assets/buku4.png">
                 <div class="rating">★★★★☆</div>
-                <div class="title-book">Judul Buku 4</div>
+                <div class="title-book">Pulp</div>
                 <div class="arrow">→</div>
             </div>
 
             <div class="card">
-                <img src="images/book1.jpg">
+                <img src="../assets/buku5.png">
                 <div class="rating">★★★★★</div>
-                <div class="title-book">Judul Buku 5</div>
+                <div class="title-book">The Lone Ranger Omnibus Volume 1</div>
                 <div class="arrow">→</div>
             </div>
 
             <div class="card">
-                <img src="images/book2.jpg">
+                <img src="../assets/buku6.png">
                 <div class="rating">★★★★☆</div>
-                <div class="title-book">Judul Buku 6</div>
+                <div class="title-book">Priest, Volume 1. Prelude for the Deceased</div>
                 <div class="arrow">→</div>
             </div>
 
             <div class="card">
-                <img src="images/book3.jpg">
+                <img src="../assets/buku7.png">
                 <div class="rating">★★★★☆</div>
-                <div class="title-book">Judul Buku 7</div>
+                <div class="title-book">The Dark Gun: Bullets & Brimstone</div>
                 <div class="arrow">→</div>
             </div>
 
             <div class="card">
-                <img src="images/book4.jpg">
+                <img src="../assets/buku8.png">
                 <div class="rating">★★★★☆</div>
-                <div class="title-book">Judul Buku 8</div>
+                <div class="title-book">Bouncer</div>
                 <div class="arrow">→</div>
             </div>
 

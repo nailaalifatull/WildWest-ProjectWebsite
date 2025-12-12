@@ -45,6 +45,7 @@
         .nav-links {
             display: flex;
             align-items: center;
+            gap : 25px;
             font-family: "Jacquard 12", cursive;
             font-size: 35px;
         }
@@ -52,7 +53,7 @@
         .nav-links a {
             color: #FFFFFF;
             text-decoration: none;
-            margin-left: 30px;
+            margin-left: 20px;
             padding-bottom: 4px;
             transition: 0.3s;
         }
@@ -61,11 +62,24 @@
             border-bottom: 2px solid #FFFFFF;
         }
 
+        .nav-links a.icon {
+            margin-left: 15px;
+            padding: 0;
+        }
+
+        .nav-links a.icon img {
+            width: 28px;
+            height: 28px;
+            object-fit: contain;
+        }
+
+
+
         /* ================== SECTION HOME ================== */
 
         #home {
             height: 100vh;
-            background-image: url('assets/home-bg.jpg');
+            background-image: url('assets/home-bg.png');
             background-size: cover;
             background-position: center;
             position: relative;
@@ -94,28 +108,82 @@
             text-shadow: 0 0 5px #000;
         }
 
+        .hero-text {
+            text-align: right;
+            padding-bottom: 150px;
+        }
+
+        .hero-text p {
+            margin: 0;
+        }
+
+        .hero-text .sayhello {
+            font-family: "Rye", cursive;
+            font-size: 3.5vw;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            text-shadow:
+                -1px -1px 0 #000,
+                 1px -1px 0 #000,
+                -1px 1px 0 #000,
+                 1px 1px 0 #000;
+        }
+
+        /* WILD WEST READS (Rye) */
+        .hero-text .brand {
+            font-family: "Rye", cursive;
+            font-size: 4vw;
+            text-shadow:
+                -1px -1px 0 #000,
+                 1px -1px 0 #000,
+                -1px 1px 0 #000,
+                 1px 1px 0 #000,
+                 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        /* HOWDY TEXT (Abhaya Libre ExtraBold) */
+        .hero-text .howdy {
+            margin-top: 15px;
+            font-family: "Abhaya Libre", serif;
+            font-size: 1.8vw;
+            font-weight: 800;
+            text-shadow:
+                -1px -1px 0 #000,
+                 1px -1px 0 #000,
+                -1px 1px 0 #000,
+                 1px 1px 0 #000;
+        }
+
         .brand {
             font-family: "Rye", cursive;
             font-size: 4vw;
             text-shadow: 0 0 10px #000;
         }
 
-        .howdy {
-            font-family: "Abhaya Libre", serif;
-            font-size: 1.8vw;
-            font-weight: 800;
-            text-shadow: 0 0 4px #000;
+        /* NEXT BUTTON */
+        .next-button {
+            position: absolute;
+            bottom: 30px;
+            right: 40px;
+            padding: 10px 20px;
+            background-color: #4a2818;
+            color: #F5E3C8;
+            text-decoration: none;
+            font-family: "Rye", cursive;
+            font-size: 20px;
+            border: 1px solid #F5E3C8;
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
 
-        .next-btn {
-            margin-top: 20px;
-            display: inline-block;
-            background-color: #4a2818;
-            color: #fff;
-            padding: 10px 20px;
-            font-family: "Rye";
-            border-radius: 5px;
-            border: 1px solid #fff;
+        .next-button:hover {
+            background-color: #6a3a24;
+        }
+
+        .tomb-icon img {
+            width: 1.6em;
+            margin-left: 6px;
         }
 
         /* ================== SECTION ABOUT ================== */
@@ -144,6 +212,7 @@
             color: #eeccb7;
             text-shadow: 1px 1px 2px #000;
         }
+
 
         /* ================== SECTION PRODUCT ================== */
 
@@ -221,17 +290,34 @@
             <a href="#home">Home</a>
             <a href="#about">About Us</a>
             <a href="#products">Product</a>
-            <a href="profile.php" class="user-icon">👤</a>
-        </nav>
-    </header>
+
+        <!-- PROFIL ICON -->
+            <a href="home/profile.php" class="icon">
+                <img src="user.png" alt="User Icon">
+        </a>
+    </nav>
+</header>
 
     <!-- ================= HOME SECTION ================= -->
     <section id="home">
-        <div class="content">
-            <p class="sayhello">Say Hello t <img src="assets/logo2.png" width="50"></p>
+        <div class="cowboy-image"></div>
+        <div class="hero-text">
+            <!-- SAY HELLO -->
+            <p class="sayhello">
+                Say Hello t 
+                <span class="tomb-icon">
+                    <img src="assets/logo2.png" alt="Icon">
+                </span>
+            </p>
             <p class="brand">WildWest Reads</p>
-            <p class="howdy">Howdy, cowboy! Ready to roam <br> the WildWest Reads once more?</p>
-            <a href="#about" class="next-btn">Next ></a>
+
+            <!-- HOWDY -->
+            <p class="howdy">
+                Howdy, cowboy! Ready to roam <br>
+                the WildWest Reads once more?
+            </p>
+            <a href="#about" class="next-button">Next ></a>
+
         </div>
     </section>
 
@@ -279,9 +365,39 @@
                     <div class="arrow">→</div>
                 </div>
 
+                <div class="card">
+                    <img src="images/book1.jpg">
+                    <div class="rating">★★★★★</div>
+                    <div class="title-book">Judul Buku 5</div>
+                    <div class="arrow">→</div>
+                </div>
+
+                <div class="card">
+                    <img src="images/book2.jpg">
+                    <div class="rating">★★★★☆</div>
+                    <div class="title-book">Judul Buku 6</div>
+                    <div class="arrow">→</div>
+                </div>
+
+                <div class="card">
+                    <img src="images/book3.jpg">
+                    <div class="rating">★★★★☆</div>
+                    <div class="title-book">Judul Buku 7</div>
+                    <div class="arrow">→</div>
+                </div>
+
+                <div class="card">
+                    <img src="images/book4.jpg">
+                    <div class="rating">★★★★☆</div>
+                    <div class="title-book">Judul Buku 8</div>
+                    <div class="arrow">→</div>
+                </div>
+
             </div>
         </div>
     </section>
 
 </body>
 </html>
+
+
