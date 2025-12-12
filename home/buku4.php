@@ -136,23 +136,23 @@
 
     <div class="container">
         <div class="book-img">
-            <img src="../assets/buku1.png" alt="Book Cover">
+            <img src="../assets/buku4.png" alt="Book Cover">
         </div>
 
         <div class="info-box">
-            <h2>Jonah Hex: Two-Gun Mojo</h2>
-            <div class="author">By <u>Joe R. Lansdale</u></div>
+            <h2>Pulp</h2>
+            <div class="author">By <u>Ed Brubaker</u></div>
 
-            <div class="stars">★★★★☆ 3.99</div>
+            <div class="stars">★★★★☆ 4,31</div>
 
             <div class="desc">
-                Shipped from UK, please allow 10 to 21 business days for arrival. Jonah Two
-                Gun Mojo (DC Comics Vertigo (Paperback) 1994). Collects Jonah Hex Two Gun Mojo issues 1–5.
-                Very good condition except very slight signs of previous sticker removal.
+                Now avaible as a soft cover trade paperback: 
+                A gorgeous original graphic novel from the bestselling creators of KILL OR BE KILLED, 
+                MY HEROES HAVE ALWAYS BEEN JUNKIES, and CRIMINAL.
             </div>
 
             <div class="genre">
-                <b>Genre:</b> Comics, Graphic Novel Westerns, Horror, Weird West, Fiction
+                <b>Genre:</b>Comics, Graphic Novels, Westerns, Crime.
             </div>
 
             <div class="footer-nav">

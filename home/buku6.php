@@ -136,23 +136,23 @@
 
     <div class="container">
         <div class="book-img">
-            <img src="../assets/buku1.png" alt="Book Cover">
+            <img src="../assets/buku6.png" alt="Book Cover">
         </div>
 
         <div class="info-box">
-            <h2>Jonah Hex: Two-Gun Mojo</h2>
-            <div class="author">By <u>Joe R. Lansdale</u></div>
+            <h2>Priest, Volume 1. Prelude for the Deceased</h2>
+            <div class="author">By <u>...</u></div>
 
-            <div class="stars">★★★★☆ 3.99</div>
+            <div class="stars">★★★★☆ 4,31</div>
 
             <div class="desc">
-                Shipped from UK, please allow 10 to 21 business days for arrival. Jonah Two
-                Gun Mojo (DC Comics Vertigo (Paperback) 1994). Collects Jonah Hex Two Gun Mojo issues 1–5.
-                Very good condition except very slight signs of previous sticker removal.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Alias, quae debitis quidem fugit ratione eum? Nulla impedit quibusdam asperiores dolores saepe, 
+                iure harum quaerat, doloribus corporis ullam, officia rerum aperiam.
             </div>
 
             <div class="genre">
-                <b>Genre:</b> Comics, Graphic Novel Westerns, Horror, Weird West, Fiction
+                <b>Genre:</b>Comics, Graphic Novels, Westerns, Crime.
             </div>
 
             <div class="footer-nav">

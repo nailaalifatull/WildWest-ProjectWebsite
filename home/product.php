@@ -167,65 +167,80 @@
 
     <div class="title">Books</div>
 
-    <a href="product.php" class="back-btn">‹ Back</a>
+    <a href="about_us.php" class="back-btn">‹ Back</a>
 
     <div class="container">
         <div class="grid">
-
             <div class="card">
                 <img src="../assets/buku1.png">
                 <div class="rating">★★★★★</div>
                 <div class="title-book">Jonah Hex: Two-Gun Mojo</div>
+                <a href="buku1.php" class="card-link"> 
                 <div class="arrow">→</div>
+                </a>
             </div>
 
             <div class="card">
                 <img src="../assets/buku2.png">
                 <div class="rating">★★★★☆</div>
                 <div class="title-book">The Sixth Gun Omnibus Vol. 1</div>
+                <a href="buku2.php" class="card-link">
                 <div class="arrow">→</div>
+                </a>
             </div>
 
             <div class="card">
                 <img src="../assets/buku3.png">
                 <div class="rating">★★★★☆</div>
                 <div class="title-book">All-Star Western, Volume 1: Guns and Gotham</div>
+                <a href="buku3.php" class="card-link">
                 <div class="arrow">→</div>
+                </a>
             </div>
 
             <div class="card">
                 <img src="../assets/buku4.png">
                 <div class="rating">★★★★☆</div>
                 <div class="title-book">Pulp</div>
+                <a href="buku4.php" class="card-link">
                 <div class="arrow">→</div>
+                </a>
             </div>
 
             <div class="card">
                 <img src="../assets/buku5.png">
                 <div class="rating">★★★★★</div>
                 <div class="title-book">The Lone Ranger Omnibus Volume 1</div>
+                <a href="buku5.php" class="card-link">
                 <div class="arrow">→</div>
+                </a>
             </div>
 
             <div class="card">
                 <img src="../assets/buku6.png">
                 <div class="rating">★★★★☆</div>
                 <div class="title-book">Priest, Volume 1. Prelude for the Deceased</div>
+                <a href="buku6.php" class="card-link">
                 <div class="arrow">→</div>
+                </a>
             </div>
 
             <div class="card">
                 <img src="../assets/buku7.png">
                 <div class="rating">★★★★☆</div>
                 <div class="title-book">The Dark Gun: Bullets & Brimstone</div>
+                <a href="buku7.php" class="card-link">
                 <div class="arrow">→</div>
+                </a>
             </div>
 
             <div class="card">
                 <img src="../assets/buku8.png">
                 <div class="rating">★★★★☆</div>
                 <div class="title-book">Bouncer</div>
+                <a href="buku8.php" class="card-link">
                 <div class="arrow">→</div>
+                </a>
             </div>
 
         </div>

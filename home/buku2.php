@@ -136,23 +136,23 @@
 
     <div class="container">
         <div class="book-img">
-            <img src="../assets/buku1.png" alt="Book Cover">
+            <img src="../assets/buku2.png" alt="Book Cover">
         </div>
 
         <div class="info-box">
-            <h2>Jonah Hex: Two-Gun Mojo</h2>
-            <div class="author">By <u>Joe R. Lansdale</u></div>
+            <h2>The Sixth Gun Omnibus Vol. 1</h2>
+            <div class="author">By <u>Cullen Bunn</u></div>
 
-            <div class="stars">★★★★☆ 3.99</div>
+            <div class="stars">★★★★☆ 4,12</div>
 
             <div class="desc">
-                Shipped from UK, please allow 10 to 21 business days for arrival. Jonah Two
-                Gun Mojo (DC Comics Vertigo (Paperback) 1994). Collects Jonah Hex Two Gun Mojo issues 1–5.
-                Very good condition except very slight signs of previous sticker removal.
+                After the Civil War, the sinister Oliander Hume hunts for a powerful
+                magical revolver—now in the hands of Becky Montcrief and gunslinger
+                Drake Sinclair—pulling them into a deadly fight for legendary power.
             </div>
 
             <div class="genre">
-                <b>Genre:</b> Comics, Graphic Novel Westerns, Horror, Weird West, Fiction
+                <b>Genre:</b>Comics, Graphic Novel, Westerns, Horror, Fantasy.
             </div>
 
             <div class="footer-nav">
