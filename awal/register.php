@@ -210,27 +210,15 @@
         </div>
 
         <h1 class="title-header">CREATE<br>ACCOUNT</h1>
-
-        <div class="social-login">
-            <button class="social-btn">
-                <i class="fab fa-google"></i> Sign Up With Google
-            </button>
-            <button class="social-btn">
-                <i class="fab fa-facebook-f"></i> Sign Up With Facebook
-            </button>
-        </div>
-
-        <p class="separator">-OR-</p>
-
-        <form style="width: 100%;">
+        <form style="width: 100%;" action="../backend/register_proses.php" method="POST">
             <div class="input-group">
-                <input type="text" placeholder="Full Name" required />
+                <input type="text" name="full_name" placeholder="Full Name" required />
             </div>
             <div class="input-group">
-                <input type="email" placeholder="Email" required />
+                <input type="email" name="email" placeholder="Email" required />
             </div>
             <div class="input-group">
-                <input type="password" placeholder="Password" required />
+                <input type="password" name="password" placeholder="Password" required />
             </div>
 
             <button type="submit" class="create-account-btn">
@@ -239,10 +227,10 @@
         </form>
 
         <p class="login-prompt">
-            Already have an account? <a href="login.php" class="login-link">Log in</a>
+            Already have an account? <a href="../awal/login.php" class="login-link">Log in</a>
         </p>
 
-        <a href="awal.php" class="back-btn">
+        <a href="../awal/register.php" class="back-btn">
             <i class="fas fa-chevron-left"></i> Back
         </a>
 

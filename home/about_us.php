@@ -160,12 +160,8 @@
             <img src="../assets/logo.png" alt="Wild West Logo">
         </div>
 
-        <nav class="nav-links">
-            <a href="home.php">Home</a>
-            <a href="about_us.php" class="active">About Us</a>
-            <a href="product.php">Product</a>
-            <a href="profile.php" class="user-icon"></a>
-        </nav>
+        <?php include "../layout/navbar.php"; ?>
+
     </header>
 
     <div class="main-content">

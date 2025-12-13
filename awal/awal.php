@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -115,4 +115,4 @@
 
     <img src="../assets/skull.png" class="skull" alt="Skull image">
 </body>
-</html>
+</html> -->

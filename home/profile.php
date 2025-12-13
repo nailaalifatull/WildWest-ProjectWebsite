@@ -1,3 +1,19 @@
+<?php
+session_start();
+include "../backend/config.php";
+
+if (!isset($_SESSION['user_id'])) {
+    header("Location: ../awal/login.php");
+    exit;
+}
+
+$user_id = $_SESSION['user_id'];
+
+$query = mysqli_query($conn, "SELECT * FROM users WHERE id='$user_id'");
+$user  = mysqli_fetch_assoc($query);
+?>
+
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -19,53 +35,6 @@
             background-position: center;
             font-family: "Abhaya Libre", serif;
         }
-
-        /* ---------------------------------
-           NAVBAR SAMA DENGAN HOME / PRODUCT
-           --------------------------------- */
-        .header {
-            background-color: #5d0f17;
-            padding: 10px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo img {
-            width: 50px;
-            height: 50px;
-        }
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            font-family: "Jacquard 12", cursive;
-            font-size: 35px;
-        }
-
-        .nav-links a {
-            color: #FFFFFF;
-            text-decoration: none;
-            margin-left: 30px;
-            padding-bottom: 5px;
-            transition: 0.3s;
-        }
-
-        .nav-links a:hover,
-        .nav-links a.active {
-            border-bottom: 2px solid #FFFFFF;
-        }
-
-        .user-icon {
-            margin-left: 30px;
-            cursor: pointer;
-        }
-
-        .user-icon::before {
-            content: '👤';
-            font-size: 26px;
-        }
-
         /* -------------------
            TITLE EDIT PROFILE
            ------------------- */
@@ -180,12 +149,8 @@
             <img src="../assets/logo.png">
         </div>
 
-        <nav class="nav-links">
-            <a href="home.php">Home</a>
-            <a href="product.php">Product</a>
-            <a href="about_us.php">About Us</a>
-            <a href="profile.php" class="user-icon"></a>
-        </nav>
+        <?php include "../layout/navbar.php"; ?>
+
     </header>
 
     <!-- TITLE -->
@@ -197,26 +162,30 @@
     </div>
 
     <!-- FORM -->
-    <div class="form-container">
-
+    <form action="../backend/update_profile.php" method="POST">
         <div class="form-row">
             <label>Username</label>
-            <input type="text" class="input-box" value="Jonah Bino Hin">
+            <input type="text" name="username" class="input-box"
+                value="<?= htmlspecialchars($user['full_name']); ?>" required>
         </div>
-
         <div class="form-row">
             <label>Email</label>
-            <input type="email" class="input-box" value="Momuuung@gmail.com">
+            <input type="email" name="email" class="input-box"
+                value="<?= htmlspecialchars($user['email']); ?>" required>
         </div>
-
         <div class="form-row">
-            <label>Password</label>
-            <input type="password" class="input-box" value="•••••••••••••••">
+            <label>Password (New)</label>
+            <input type="password" name="password" class="input-box"
+                placeholder="Leave blank if not changing">
         </div>
-    </div>
+        <button type="submit" class="back-btn"
+                style="right:20px; left:auto;">Save</button>
+    </form>
+
 
     <!-- BACK BUTTON -->
-    <a href="../index.php" class="back-btn">‹ Back</a>
+    <a href="../backend/logout.php" class="back-btn" style="bottom:80px;">Logout</a>
+    <a href="../home/home.php" class="back-btn">‹ Back</a>
 
 </body>
 </html>

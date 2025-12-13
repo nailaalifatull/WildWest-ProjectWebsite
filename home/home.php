@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['user_id'])) {
+    header("Location: ../awal/login.php");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -44,53 +53,9 @@
         }
 
         /* Semua elemen di atas overlay */
-        body, .header, .main-content {
+        body, .main-content {
             position: relative;
             z-index: 1;
-        }
-
-        /* HEADER */
-        .header {
-            background-color: #5d0f17cc;
-            padding: 10px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo img {
-            width: 50px;
-            height: 50px;
-        }
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            font-family: "Jacquard 12", cursive;
-            font-size: 35px;
-        }
-
-        .nav-links a {
-            color: #FFFFFF;
-            text-decoration: none;
-            margin-left: 30px;
-            padding-bottom: 5px;
-            transition: border-bottom 0.3s;
-        }
-
-        .nav-links a:hover,
-        .nav-links a.active {
-            border-bottom: 2px solid #FFFFFF;
-        }
-
-        .user-icon {
-            margin-left: 30px;
-            cursor: pointer;
-        }
-
-        .user-icon::before {
-            content: '👤';
-            font-size: 26px;
         }
 
         /* MAIN CONTENT */
@@ -135,9 +100,9 @@
             align-items: center;
             text-shadow:
                 -1px -1px 0 #000,
-                 1px -1px 0 #000,
+                1px -1px 0 #000,
                 -1px 1px 0 #000,
-                 1px 1px 0 #000;
+                1px 1px 0 #000;
         }
 
         .tomb-icon img {
@@ -198,12 +163,8 @@
             <img src="../assets/logo.png" alt="Wild West Logo">
         </div>
 
-        <nav class="nav-links">
-            <a href="home.php" class="nav-home">Home</a>
-            <a href="about_us.php" class="nav-about">About Us</a>
-            <a href="product.php" class="nav-product">Product</a>
-            <a href="profile.php" class="user-icon"></a>
-        </nav>
+        <?php include "../layout/navbar.php"; ?>
+
     </header>
 
     <div class="main-content">
@@ -221,16 +182,12 @@
             </p>
 
             <p class="brand">WildWest Reads</p>
-
-            <!-- HOWDY -->
             <p class="howdy">
-                Howdy, cowboy! Ready to roam <br>
+                Howdy, <?php echo htmlspecialchars($_SESSION['full_name']); ?>! Ready to roam <br>
                 the WildWest Reads once more?
             </p>
-
         </div>
-
-        <a href="about_us.php" class="next-button">Next ></a>
+        <a href="product.php" class="next-button">Next ></a>
     </div>
 
 </body>

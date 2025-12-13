@@ -1,3 +1,9 @@
+<?php
+include "../backend/config.php";
+
+$query = mysqli_query($conn, "SELECT * FROM products");
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -19,53 +25,7 @@
             background-size: cover;
             background-position: center;
         }
-
-        /* ==========================
-           NAVBAR SAMA PERSIS SEPERTI HOME
-           ========================== */
-        .header {
-            background-color: #5d0f17cc;
-            padding: 10px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo img {
-            width: 50px;
-            height: 50px;
-        }
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            font-family: "Jacquard 12", cursive;
-            font-size: 35px;
-        }
-
-        .nav-links a {
-            color: #FFFFFF;
-            text-decoration: none;
-            margin-left: 30px;
-            padding-bottom: 5px;
-            transition: border-bottom 0.3s;
-        }
-
-        .nav-links a:hover,
-        .nav-links a.active {
-            border-bottom: 2px solid #FFFFFF;
-        }
-
-        .user-icon {
-            margin-left: 30px;
-            cursor: pointer;
-        }
-
-        .user-icon::before {
-            content: '👤';
-            font-size: 26px;
-        }
-
+        
         /* TITLE */
         .title {
             font-family: "Jacquard 12", cursive;
@@ -148,102 +108,43 @@
 </head>
 
 <body>
-
-    <!-- NAVBAR (SAMA PERSIS DENGAN HOME) -->
     <header class="header">
         <div class="logo">
             <img src="../assets/logo.png" alt="Wild West Logo">
-            <img src="../assets/logo.png" alt="Wild West Logo">
-            <img src="../assets/logo.png" alt="Wild West Logo">
         </div>
 
-        <nav class="nav-links">
-            <a href="home.php">Home</a>
-            <a href="about_us.php">About Us</a>
-            <a href="product.php" class="active">Product</a>
-            <a href="profile.php" class="user-icon"></a>
-        </nav>
+        <?php include "../layout/navbar.php"; ?>
     </header>
 
     <div class="title">Books</div>
 
-    <a href="about_us.php" class="back-btn">‹ Back</a>
+    <a href="home.php" class="back-btn">‹ Back</a>
 
     <div class="container">
         <div class="grid">
-            <div class="card">
-                <img src="../assets/buku1.png">
-                <div class="rating">★★★★★</div>
-                <div class="title-book">Jonah Hex: Two-Gun Mojo</div>
-                <a href="buku1.php" class="card-link"> 
-                <div class="arrow">→</div>
-                </a>
-            </div>
+            <?php while ($row = mysqli_fetch_assoc($query)) : ?>
+                <div class="card">
+                    <img src="../assets/<?= $row['image']; ?>">
 
-            <div class="card">
-                <img src="../assets/buku2.png">
-                <div class="rating">★★★★☆</div>
-                <div class="title-book">The Sixth Gun Omnibus Vol. 1</div>
-                <a href="buku2.php" class="card-link">
-                <div class="arrow">→</div>
-                </a>
-            </div>
+                    <div class="rating">
+                        <?php
+                        for ($i = 1; $i <= 5; $i++) {
+                            echo $i <= $row['rating'] ? "★" : "☆";
+                        }
+                        ?>
+                    </div>
 
-            <div class="card">
-                <img src="../assets/buku3.png">
-                <div class="rating">★★★★☆</div>
-                <div class="title-book">All-Star Western, Volume 1: Guns and Gotham</div>
-                <a href="buku3.php" class="card-link">
-                <div class="arrow">→</div>
-                </a>
-            </div>
+                    <div class="title-book">
+                        <?= $row['title']; ?>
+                    </div>
 
-            <div class="card">
-                <img src="../assets/buku4.png">
-                <div class="rating">★★★★☆</div>
-                <div class="title-book">Pulp</div>
-                <a href="buku4.php" class="card-link">
-                <div class="arrow">→</div>
-                </a>
-            </div>
-
-            <div class="card">
-                <img src="../assets/buku5.png">
-                <div class="rating">★★★★★</div>
-                <div class="title-book">The Lone Ranger Omnibus Volume 1</div>
-                <a href="buku5.php" class="card-link">
-                <div class="arrow">→</div>
-                </a>
-            </div>
-
-            <div class="card">
-                <img src="../assets/buku6.png">
-                <div class="rating">★★★★☆</div>
-                <div class="title-book">Priest, Volume 1. Prelude for the Deceased</div>
-                <a href="buku6.php" class="card-link">
-                <div class="arrow">→</div>
-                </a>
-            </div>
-
-            <div class="card">
-                <img src="../assets/buku7.png">
-                <div class="rating">★★★★☆</div>
-                <div class="title-book">The Dark Gun: Bullets & Brimstone</div>
-                <a href="buku7.php" class="card-link">
-                <div class="arrow">→</div>
-                </a>
-            </div>
-
-            <div class="card">
-                <img src="../assets/buku8.png">
-                <div class="rating">★★★★☆</div>
-                <div class="title-book">Bouncer</div>
-                <a href="buku8.php" class="card-link">
-                <div class="arrow">→</div>
-                </a>
-            </div>
-
+                    <a href="../home/product_detail.php?slug=<?= $row['slug']; ?>" class="card-link">
+                        <div class="arrow">→</div>
+                    </a>
+                </div>
+            <?php endwhile; ?>
         </div>
+
     </div>
 
 </body>

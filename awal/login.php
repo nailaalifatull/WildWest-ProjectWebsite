@@ -241,32 +241,24 @@
             </h1>
 
             <div class="form-content">
-                <form>
+                <form action="../backend/login_proses.php" method="POST">
                     <div class="input-group">
-                        <input type="text" placeholder="Username" required>
+                        <input type="email" name="email" placeholder="Email" required>
                     </div>
 
                     <div class="input-group">
-                        <input type="password" placeholder="Password" required>
+                        <input type="password" name="password" placeholder="Password" required>
                     </div>
-
                     <button class="login-btn">Log in</button>
                 </form>
 
                 <p class="login-prompt">
                     Don't have account?
-                    <a href="register.html" class="register-link">Register</a>
+                    <a href="../awal/register.php" class="register-link">Register</a>
                 </p>
-
-                <p class="separator">- OR -</p>
-
-                <div class="social-icons">
-                    <img src="../assets/icon_google.jpeg" alt="google">
-                    <img src="../assets/icon_facebook.png" alt="facebook">
-                </div>
             </div>
 
-            <a href="create_account.php" class="back-btn"><i class="fas fa-chevron-left"></i> Back</a>
+            <a href="../index.php" class="back-btn"><i class="fas fa-chevron-left"></i> Back</a>
         </div>
 
         <div class="image-panel">
