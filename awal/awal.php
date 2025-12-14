@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -108,11 +108,11 @@
         </div>
         <p class="tagline">Discover a world of endless imagination</p>
         <div class="buttons">
-            <a href="create_account.php" class="button">Sign Up</a>
+            <a href="register.php" class="button">Sign Up</a>
             <a href="login.php" class="button">Log In</a>
         </div>
     </div>
 
     <img src="../assets/skull.png" class="skull" alt="Skull image">
 </body>
-</html> -->
+</html> 

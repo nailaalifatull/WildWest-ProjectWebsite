@@ -230,7 +230,7 @@
             Already have an account? <a href="../awal/login.php" class="login-link">Log in</a>
         </p>
 
-        <a href="../awal/register.php" class="back-btn">
+        <a href="../awal/awal.php" class="back-btn">
             <i class="fas fa-chevron-left"></i> Back
         </a>
 
