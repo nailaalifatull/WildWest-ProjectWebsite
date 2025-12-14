@@ -29,7 +29,7 @@ if (!isset($_SESSION['user_id'])) {
 
     <style>
         body {
-            background-image: url('../assets/home-bg.jpg');
+            background-image: url('../assets/home-bg.png');
             background-size: cover;
             background-position: center;
             margin: 0;
