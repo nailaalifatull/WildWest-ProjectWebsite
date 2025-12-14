@@ -120,14 +120,22 @@ body {
 }
 
 /* --- Navigasi Bawah --- */
-.footer-nav {
+.footer-left {
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    z-index: 20;
+}
+
+.footer-right {
     position: fixed;
     bottom: 40px;
     right: 40px;
     z-index: 20;
 }
 
-.footer-nav a {
+.footer-left a,
+.footer-right a {
     padding: 10px 20px;
     background-color: #4a2818;
     color: #FFFFFF;
@@ -139,7 +147,8 @@ body {
     transition: 0.3s;
 }
 
-.footer-nav a:hover {
+.footer-left a:hover,
+.footer-right a:hover {
     background-color: #6a3a24;
 }
 
@@ -186,8 +195,12 @@ body {
             <b>Genre:</b> <?= $buku['genre']; ?>
         </div>
 
-        <div class="footer-nav">
+        <div class="footer-left">
             <a href="product.php">← Back</a>
+        </div>
+
+        <div class="footer-right">
+            <a href="rating.php">Rating →</a>
         </div>
 
     </div>

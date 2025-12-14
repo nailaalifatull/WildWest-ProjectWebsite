@@ -160,6 +160,30 @@
             font-family: 'Rye', cursive;
         }
 
+        /* --- Navigasi Bawah --- */
+        .footer-nav {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            z-index: 20;
+        }
+
+        .footer-nav a {
+            padding: 10px 20px;
+            background-color: #4a2818;
+            color: #FFFFFF;
+            text-decoration: none;
+            font-family: 'Rye', cursive;
+            font-size: 20px;
+            border: 1px solid #FFFFFF;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .footer-nav a:hover {
+            background-color: #6a3a24;
+        }
+
 /* ================= RESPONSIVE ================= */
     @media (max-width: 768px) {
         .rating-container {
@@ -205,6 +229,9 @@
                 <button class="cancel">Cancel</button>
                 <button class="post">Post</button>
             </div>
+        </div>
+        <div class="footer-nav">
+            <a href="product.php">← Back</a>
         </div>
 
     </div>
