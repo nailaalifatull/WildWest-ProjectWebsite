@@ -23,7 +23,7 @@
             margin: 0;
             padding: 0;
             font-family: 'Roboto', sans-serif;
-            background: url('../assets/background.png') no-repeat center center/cover;
+            background: url('../WildWest-ProjectWebsite/assets/background.png') no-repeat center center/cover;
             height: 100vh;
             display: flex;
             align-items: center;
@@ -108,11 +108,11 @@
         </div>
         <p class="tagline">Discover a world of endless imagination</p>
         <div class="buttons">
-            <a href="../awal/register.php" class="button">Sign Up</a>
-            <a href="../awal/login.php" class="button">Log In</a>
+            <a href="../WildWest-ProjectWebsite/awal/register.php" class="button">Sign Up</a>
+            <a href="../WildWest-ProjectWebsite/awal/login.php" class="button">Log In</a>
         </div>
     </div>
 
-    <img src="../assets/skull.png" class="skull" alt="Skull image">
+    <img src="../WildWest-ProjectWebsite/assets/skull.png" class="skull" alt="Skull image">
 </body>
 </html>

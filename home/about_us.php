@@ -166,7 +166,6 @@ if (!isset($_SESSION['user_id'])) {
     <header class="header">
         <div class="logo">
             <img src="../assets/logo.png" alt="Wild West Logo">
-            <img src="../assets/logo.png" alt="Wild West Logo">
         </div>
 
         <?php include "../layout/navbar.php"; ?>
